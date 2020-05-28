@@ -1,0 +1,36 @@
+{
+  "development": {
+    "username": "root",
+    "password": "pass1234",
+    "database": "codewars",
+    "host": "database",
+    "dialect": "mysql",
+    "operatorsAliases": false
+  },
+  "test": {
+    "username": "root",
+    "password": "pass1234",
+    "database": "codewars_test",
+    "host": "database",
+    "dialect": "mysql",
+    "operatorsAliases": false
+  },
+  "production": {
+    "username": "root",
+    "password": "pass1234",
+    "database": "codewars",
+    "host": "database",
+    "dialect": "mysql",
+    "operatorsAliases": false
+  },
+  "google": {
+    "clientID": "66039471068-4omf0oi0p85ml06gkmrbl4l3vqo75f17.apps.googleusercontent.com",
+    "clientSecret": "uv9Yy8N1EFAkMWZuucJ5EIEB"
+  },
+  "secret": {
+    "cookieKey": "dhlI3MCJvgQDyItpI4UBFf9I8fDRjZu9"
+  },
+  "port": {
+    "portNumber": "8081"
+  }
+}

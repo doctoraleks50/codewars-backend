@@ -1,0 +1,54 @@
+{
+  "name": "codewars-backend",
+  "version": "1.0.0",
+  "description": "Back-end for codewars app internship project",
+  "main": "app.js",
+  "scripts": {
+    "pretest": "NODE_ENV=test sequelize-cli db:migrate && NODE_ENV=test sequelize-cli db:seed:undo:all && NODE_ENV=test sequelize-cli db:seed:all",
+    "test": "NODE_ENV=test mocha --exit --timeout 30000 \"tests/**/*.test.js\"",
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "migrate": "sequelize-cli db:migrate",
+    "seed": "sequelize-cli db:seed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.customsmobile.com:internship/codewars-backend.git"
+  },
+  "author": "Markas Kvitka",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.7.1",
+    "body-parser": "^1.19.0",
+    "bottlejs": "^1.7.2",
+    "cookie-parser": "^1.4.4",
+    "cookie-session": "^1.3.3",
+    "express": "^4.17.1",
+    "express-unless": "^0.5.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.15",
+    "mysql2": "^1.7.0",
+    "passport": "^0.4.0",
+    "passport-google-oauth": "^2.0.0",
+    "passport-jwt": "^4.0.0",
+    "sequelize": "^5.21.2"
+  },
+  "devDependencies": {
+    "assert": "^2.0.0",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^6.2.2",
+    "nodemon": "^1.19.3",
+    "sequelize-cli": "^5.5.1",
+    "supertest": "^4.0.2"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "code/*"
+    ]
+  },
+  "apidoc": {
+    "title": "API CodeWars",
+    "url": "cm.codewars.ua"
+  }
+}
